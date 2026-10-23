@@ -1,0 +1,2380 @@
+[
+  {
+    "id": "d1",
+    "name": "Ribbed Knit Mini Tank Dress",
+    "category": "dress",
+    "image_url": "/garments/d1.jpg",
+    "price": 39,
+    "color_hex": "#266455",
+    "season_tags": [
+      "winter",
+      "autumn"
+    ],
+    "silhouette": {
+      "structured": false,
+      "fabric": "smooth",
+      "neckline": "round",
+      "waist": "regular"
+    },
+    "occasion_tags": [
+      "work",
+      "date night",
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 3 \u00b7 Dresses",
+    "sizes_in_stock": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      38.17,
+      -23.94,
+      2.59
+    ]
+  },
+  {
+    "id": "d2",
+    "name": "Sleeveless Knit A-Line Midi Dress",
+    "category": "dress",
+    "image_url": "/garments/d2.jpg",
+    "price": 59,
+    "color_hex": "#151519",
+    "season_tags": [
+      "winter",
+      "summer"
+    ],
+    "silhouette": {
+      "structured": false,
+      "fabric": "soft",
+      "neckline": "round",
+      "waist": "regular"
+    },
+    "occasion_tags": [
+      "date night",
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 3 \u00b7 Dresses",
+    "sizes_in_stock": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      6.92,
+      1.02,
+      -2.75
+    ]
+  },
+  {
+    "id": "d3",
+    "name": "Bubble Hem Mini Dress",
+    "category": "dress",
+    "image_url": "/garments/d3.jpg",
+    "price": 52,
+    "color_hex": "#E8EAE9",
+    "season_tags": [
+      "summer"
+    ],
+    "silhouette": {
+      "structured": true,
+      "fabric": "crisp",
+      "neckline": "round",
+      "waist": "defined"
+    },
+    "occasion_tags": [
+      "work",
+      "wedding guest",
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 3 \u00b7 Dresses",
+    "sizes_in_stock": [
+      "XS",
+      "S",
+      "M"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      92.52,
+      -0.84,
+      0.24
+    ]
+  },
+  {
+    "id": "d4",
+    "name": "Ditsy Print Collared Midi Dress",
+    "category": "dress",
+    "image_url": "/garments/d4.jpg",
+    "price": 58,
+    "color_hex": "#143968",
+    "season_tags": [
+      "winter"
+    ],
+    "silhouette": {
+      "structured": false,
+      "fabric": "light",
+      "neckline": "collared",
+      "waist": "defined"
+    },
+    "occasion_tags": [
+      "wedding guest",
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 3 \u00b7 Dresses",
+    "sizes_in_stock": [
+      "S",
+      "M",
+      "L"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      23.92,
+      5.42,
+      -31.3
+    ]
+  },
+  {
+    "id": "d5",
+    "name": "Tie-Strap Ruched Mini Dress",
+    "category": "dress",
+    "image_url": "/garments/d5.jpg",
+    "price": 54,
+    "color_hex": "#E2DDC6",
+    "season_tags": [
+      "spring",
+      "autumn"
+    ],
+    "silhouette": {
+      "structured": false,
+      "fabric": "light",
+      "neckline": "round",
+      "waist": "defined"
+    },
+    "occasion_tags": [
+      "wedding guest",
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 3 \u00b7 Dresses",
+    "sizes_in_stock": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      87.95,
+      -2.15,
+      11.9
+    ]
+  },
+  {
+    "id": "d6",
+    "name": "Balloon Hem Midi Dress",
+    "category": "dress",
+    "image_url": "/garments/d6.jpg",
+    "price": 68,
+    "color_hex": "#5C5368",
+    "season_tags": [
+      "winter",
+      "summer"
+    ],
+    "silhouette": {
+      "structured": false,
+      "fabric": "soft",
+      "neckline": "round",
+      "waist": "regular"
+    },
+    "occasion_tags": [
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 3 \u00b7 Dresses",
+    "sizes_in_stock": [
+      "S",
+      "M",
+      "L"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      36.86,
+      8.25,
+      -10.75
+    ]
+  },
+  {
+    "id": "d7",
+    "name": "Tiered Shirt Dress",
+    "category": "dress",
+    "image_url": "/garments/d7.jpg",
+    "price": 72,
+    "color_hex": "#C6AA89",
+    "season_tags": [
+      "spring",
+      "autumn"
+    ],
+    "silhouette": {
+      "structured": true,
+      "fabric": "crisp",
+      "neckline": "collared",
+      "waist": "defined"
+    },
+    "occasion_tags": [
+      "work",
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 3 \u00b7 Dresses",
+    "sizes_in_stock": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      71.26,
+      5.27,
+      20.79
+    ]
+  },
+  {
+    "id": "d8",
+    "name": "Satin Slip Midi Dress",
+    "category": "dress",
+    "image_url": "/garments/d8.jpg",
+    "price": 64,
+    "color_hex": "#D3CCC6",
+    "season_tags": [
+      "summer"
+    ],
+    "silhouette": {
+      "structured": false,
+      "fabric": "draping",
+      "neckline": "v",
+      "waist": "regular"
+    },
+    "occasion_tags": [
+      "wedding guest",
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 3 \u00b7 Dresses",
+    "sizes_in_stock": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      82.44,
+      1.37,
+      3.84
+    ]
+  },
+  {
+    "id": "d9",
+    "name": "Poplin Shirt Dress",
+    "category": "dress",
+    "image_url": "/garments/d9.jpg",
+    "price": 66,
+    "color_hex": "#8A95A6",
+    "season_tags": [
+      "summer"
+    ],
+    "silhouette": {
+      "structured": true,
+      "fabric": "crisp",
+      "neckline": "collared",
+      "waist": "regular"
+    },
+    "occasion_tags": [
+      "work",
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 3 \u00b7 Dresses",
+    "sizes_in_stock": [
+      "S",
+      "M",
+      "L"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      61.35,
+      -0.28,
+      -10.25
+    ]
+  },
+  {
+    "id": "d10",
+    "name": "Belted Wrap Coat Dress",
+    "category": "dress",
+    "image_url": "/garments/d10.jpg",
+    "price": 79,
+    "color_hex": "#171617",
+    "season_tags": [
+      "winter",
+      "summer"
+    ],
+    "silhouette": {
+      "structured": true,
+      "fabric": "structured",
+      "neckline": "v",
+      "waist": "defined"
+    },
+    "occasion_tags": [
+      "work",
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 3 \u00b7 Dresses",
+    "sizes_in_stock": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      7.39,
+      0.72,
+      -0.52
+    ]
+  },
+  {
+    "id": "d11",
+    "name": "Draped Neck Column Midi Dress",
+    "category": "dress",
+    "image_url": "/garments/d11.jpg",
+    "price": 55,
+    "color_hex": "#E4C8C3",
+    "season_tags": [
+      "summer",
+      "spring"
+    ],
+    "silhouette": {
+      "structured": false,
+      "fabric": "smooth",
+      "neckline": "round",
+      "waist": "defined"
+    },
+    "occasion_tags": [
+      "work",
+      "wedding guest",
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 3 \u00b7 Dresses",
+    "sizes_in_stock": [
+      "S",
+      "M",
+      "L"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      82.78,
+      9.03,
+      6.11
+    ]
+  },
+  {
+    "id": "d12",
+    "name": "Floral Satin Slip Midi Dress",
+    "category": "dress",
+    "image_url": "/garments/d12.jpg",
+    "price": 61,
+    "color_hex": "#586547",
+    "season_tags": [
+      "autumn"
+    ],
+    "silhouette": {
+      "structured": false,
+      "fabric": "draping",
+      "neckline": "v",
+      "waist": "defined"
+    },
+    "occasion_tags": [
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 3 \u00b7 Dresses",
+    "sizes_in_stock": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      40.96,
+      -10.92,
+      15.39
+    ]
+  },
+  {
+    "id": "d13",
+    "name": "Puff Sleeve Tiered Midi Dress",
+    "category": "dress",
+    "image_url": "/garments/d13.jpg",
+    "price": 57,
+    "color_hex": "#4888C8",
+    "season_tags": [
+      "winter"
+    ],
+    "silhouette": {
+      "structured": false,
+      "fabric": "light",
+      "neckline": "round",
+      "waist": "regular"
+    },
+    "occasion_tags": [
+      "wedding guest",
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 3 \u00b7 Dresses",
+    "sizes_in_stock": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      55.23,
+      -0.5,
+      -39.27
+    ]
+  },
+  {
+    "id": "d14",
+    "name": "Sleeveless A-Line Mini Dress",
+    "category": "dress",
+    "image_url": "/garments/d14.jpg",
+    "price": 47,
+    "color_hex": "#CAB9C4",
+    "season_tags": [
+      "summer"
+    ],
+    "silhouette": {
+      "structured": true,
+      "fabric": "crisp",
+      "neckline": "round",
+      "waist": "regular"
+    },
+    "occasion_tags": [
+      "work",
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 3 \u00b7 Dresses",
+    "sizes_in_stock": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      76.82,
+      7.97,
+      -3.37
+    ]
+  },
+  {
+    "id": "d15",
+    "name": "Puff Sleeve Ruffle Mini Dress",
+    "category": "dress",
+    "image_url": "/garments/d15.jpg",
+    "price": 63,
+    "color_hex": "#E5C7CB",
+    "season_tags": [
+      "summer"
+    ],
+    "silhouette": {
+      "structured": false,
+      "fabric": "soft",
+      "neckline": "round",
+      "waist": "regular"
+    },
+    "occasion_tags": [
+      "wedding guest",
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 3 \u00b7 Dresses",
+    "sizes_in_stock": [
+      "S",
+      "M",
+      "L"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      82.82,
+      11.21,
+      1.9
+    ]
+  },
+  {
+    "id": "d16",
+    "name": "Pleated Midi Dress",
+    "category": "dress",
+    "image_url": "/garments/d16.jpg",
+    "price": 74,
+    "color_hex": "#161A23",
+    "season_tags": [
+      "winter"
+    ],
+    "silhouette": {
+      "structured": true,
+      "fabric": "crisp",
+      "neckline": "round",
+      "waist": "defined"
+    },
+    "occasion_tags": [
+      "work",
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 3 \u00b7 Dresses",
+    "sizes_in_stock": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      9.24,
+      0.88,
+      -6.81
+    ]
+  },
+  {
+    "id": "d17",
+    "name": "Striped Belted Shirt Dress",
+    "category": "dress",
+    "image_url": "/garments/d17.jpg",
+    "price": 69,
+    "color_hex": "#D5D9E9",
+    "season_tags": [
+      "summer"
+    ],
+    "silhouette": {
+      "structured": true,
+      "fabric": "crisp",
+      "neckline": "collared",
+      "waist": "defined"
+    },
+    "occasion_tags": [
+      "work",
+      "wedding guest",
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 3 \u00b7 Dresses",
+    "sizes_in_stock": [
+      "S",
+      "M",
+      "L"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      86.83,
+      1.68,
+      -8.3
+    ]
+  },
+  {
+    "id": "d18",
+    "name": "Striped Ruffle Hem Mini Dress",
+    "category": "dress",
+    "image_url": "/garments/d18.jpg",
+    "price": 43,
+    "color_hex": "#B5B6B9",
+    "season_tags": [
+      "summer"
+    ],
+    "silhouette": {
+      "structured": false,
+      "fabric": "textured",
+      "neckline": "round",
+      "waist": "regular"
+    },
+    "occasion_tags": [
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 3 \u00b7 Dresses",
+    "sizes_in_stock": [
+      "XS",
+      "S",
+      "M"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      74.05,
+      0.22,
+      -1.65
+    ]
+  },
+  {
+    "id": "d19",
+    "name": "Houndstooth Cami Midi Dress",
+    "category": "dress",
+    "image_url": "/garments/d19.jpg",
+    "price": 56,
+    "color_hex": "#282829",
+    "season_tags": [
+      "winter",
+      "summer"
+    ],
+    "silhouette": {
+      "structured": false,
+      "fabric": "smooth",
+      "neckline": "v",
+      "waist": "regular"
+    },
+    "occasion_tags": [
+      "work",
+      "date night",
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 3 \u00b7 Dresses",
+    "sizes_in_stock": [
+      "S",
+      "M",
+      "L"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      16.15,
+      0.24,
+      -0.66
+    ]
+  },
+  {
+    "id": "d20",
+    "name": "Floral Cami Midi Dress",
+    "category": "dress",
+    "image_url": "/garments/d20.jpg",
+    "price": 49,
+    "color_hex": "#999489",
+    "season_tags": [
+      "autumn",
+      "summer"
+    ],
+    "silhouette": {
+      "structured": false,
+      "fabric": "light",
+      "neckline": "v",
+      "waist": "defined"
+    },
+    "occasion_tags": [
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 3 \u00b7 Dresses",
+    "sizes_in_stock": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      61.45,
+      -0.17,
+      6.46
+    ]
+  },
+  {
+    "id": "d21",
+    "name": "Rib Knit Cami Midi Dress",
+    "category": "dress",
+    "image_url": "/garments/d21.jpg",
+    "price": 45,
+    "color_hex": "#A5B8AA",
+    "season_tags": [
+      "summer",
+      "autumn"
+    ],
+    "silhouette": {
+      "structured": false,
+      "fabric": "smooth",
+      "neckline": "round",
+      "waist": "regular"
+    },
+    "occasion_tags": [
+      "work",
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 3 \u00b7 Dresses",
+    "sizes_in_stock": [
+      "S",
+      "M",
+      "L"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      73.01,
+      -9.25,
+      4.88
+    ]
+  },
+  {
+    "id": "d22",
+    "name": "Puff Sleeve A-Line Dress",
+    "category": "dress",
+    "image_url": "/garments/d22.jpg",
+    "price": 51,
+    "color_hex": "#E0D5AC",
+    "season_tags": [
+      "spring"
+    ],
+    "silhouette": {
+      "structured": true,
+      "fabric": "crisp",
+      "neckline": "round",
+      "waist": "regular"
+    },
+    "occasion_tags": [
+      "work",
+      "wedding guest",
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 3 \u00b7 Dresses",
+    "sizes_in_stock": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      85.21,
+      -2.65,
+      21.67
+    ]
+  },
+  {
+    "id": "d23",
+    "name": "Draped Slip Midi Dress",
+    "category": "dress",
+    "image_url": "/garments/d23.jpg",
+    "price": 65,
+    "color_hex": "#C6C3B9",
+    "season_tags": [
+      "summer",
+      "autumn"
+    ],
+    "silhouette": {
+      "structured": false,
+      "fabric": "draping",
+      "neckline": "round",
+      "waist": "regular"
+    },
+    "occasion_tags": [
+      "wedding guest",
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 3 \u00b7 Dresses",
+    "sizes_in_stock": [
+      "S",
+      "M",
+      "L"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      78.77,
+      -0.73,
+      5.38
+    ]
+  },
+  {
+    "id": "t1",
+    "name": "Cropped Graphic Sweatshirt",
+    "category": "top",
+    "image_url": "/garments/t1.jpg",
+    "price": 32,
+    "color_hex": "#1A1A1B",
+    "season_tags": [
+      "winter",
+      "summer"
+    ],
+    "silhouette": {
+      "structured": false,
+      "fabric": "soft",
+      "neckline": "round",
+      "waist": "regular"
+    },
+    "occasion_tags": [
+      "date night",
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 2 \u00b7 Tops",
+    "sizes_in_stock": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      9.3,
+      0.26,
+      -0.7
+    ]
+  },
+  {
+    "id": "t2",
+    "name": "Cable Knit Cricket Jumper",
+    "category": "top",
+    "image_url": "/garments/t2.jpg",
+    "price": 45,
+    "color_hex": "#F8F4EA",
+    "season_tags": [
+      "summer"
+    ],
+    "silhouette": {
+      "structured": false,
+      "fabric": "chunky",
+      "neckline": "v",
+      "waist": "regular"
+    },
+    "occasion_tags": [
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 2 \u00b7 Tops",
+    "sizes_in_stock": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      96.24,
+      -0.37,
+      5.27
+    ]
+  },
+  {
+    "id": "t3",
+    "name": "Brushed Wool Crewneck Jumper",
+    "category": "top",
+    "image_url": "/garments/t3.jpg",
+    "price": 42,
+    "color_hex": "#046A35",
+    "season_tags": [
+      "spring",
+      "autumn"
+    ],
+    "silhouette": {
+      "structured": false,
+      "fabric": "chunky",
+      "neckline": "round",
+      "waist": "regular"
+    },
+    "occasion_tags": [
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 2 \u00b7 Tops",
+    "sizes_in_stock": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      38.88,
+      -39.19,
+      22.51
+    ]
+  },
+  {
+    "id": "t4",
+    "name": "Mohair Stripe Knit Jumper",
+    "category": "top",
+    "image_url": "/garments/t4.jpg",
+    "price": 47,
+    "color_hex": "#17334A",
+    "season_tags": [
+      "winter"
+    ],
+    "silhouette": {
+      "structured": false,
+      "fabric": "chunky",
+      "neckline": "round",
+      "waist": "regular"
+    },
+    "occasion_tags": [
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 2 \u00b7 Tops",
+    "sizes_in_stock": [
+      "S",
+      "M",
+      "L"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      20.22,
+      -2.19,
+      -17.37
+    ]
+  },
+  {
+    "id": "t5",
+    "name": "Pigment Dyed Hoodie",
+    "category": "top",
+    "image_url": "/garments/t5.jpg",
+    "price": 38,
+    "color_hex": "#ECA3CC",
+    "season_tags": [
+      "summer",
+      "winter"
+    ],
+    "silhouette": {
+      "structured": false,
+      "fabric": "soft",
+      "neckline": "round",
+      "waist": "regular"
+    },
+    "occasion_tags": [
+      "date night",
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 2 \u00b7 Tops",
+    "sizes_in_stock": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      75.07,
+      32.99,
+      -9.98
+    ]
+  },
+  {
+    "id": "t6",
+    "name": "Boxy Logo T-Shirt",
+    "category": "top",
+    "image_url": "/garments/t6.jpg",
+    "price": 19,
+    "color_hex": "#E3AA4C",
+    "season_tags": [
+      "spring"
+    ],
+    "silhouette": {
+      "structured": false,
+      "fabric": "soft",
+      "neckline": "round",
+      "waist": "regular"
+    },
+    "occasion_tags": [
+      "date night",
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 2 \u00b7 Tops",
+    "sizes_in_stock": [
+      "S",
+      "M",
+      "L"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      73.29,
+      11.53,
+      55.1
+    ]
+  },
+  {
+    "id": "t7",
+    "name": "Fine Knit Button Cardigan",
+    "category": "top",
+    "image_url": "/garments/t7.jpg",
+    "price": 41,
+    "color_hex": "#911B19",
+    "season_tags": [
+      "spring",
+      "autumn"
+    ],
+    "silhouette": {
+      "structured": false,
+      "fabric": "soft",
+      "neckline": "v",
+      "waist": "regular"
+    },
+    "occasion_tags": [
+      "date night",
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 2 \u00b7 Tops",
+    "sizes_in_stock": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      31.52,
+      47.71,
+      32.93
+    ]
+  },
+  {
+    "id": "t8",
+    "name": "Washed Graphic Hoodie",
+    "category": "top",
+    "image_url": "/garments/t8.jpg",
+    "price": 36,
+    "color_hex": "#765B64",
+    "season_tags": [
+      "winter",
+      "summer"
+    ],
+    "silhouette": {
+      "structured": false,
+      "fabric": "soft",
+      "neckline": "round",
+      "waist": "regular"
+    },
+    "occasion_tags": [
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 2 \u00b7 Tops",
+    "sizes_in_stock": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      41.62,
+      12.61,
+      -0.9
+    ]
+  },
+  {
+    "id": "t9",
+    "name": "Ribbed Short Sleeve Knit Top",
+    "category": "top",
+    "image_url": "/garments/t9.jpg",
+    "price": 27,
+    "color_hex": "#1A1A18",
+    "season_tags": [
+      "winter",
+      "autumn"
+    ],
+    "silhouette": {
+      "structured": false,
+      "fabric": "textured",
+      "neckline": "round",
+      "waist": "regular"
+    },
+    "occasion_tags": [
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 2 \u00b7 Tops",
+    "sizes_in_stock": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      9.19,
+      -0.5,
+      1.4
+    ]
+  },
+  {
+    "id": "t10",
+    "name": "Pinstripe Oversized Shirt",
+    "category": "top",
+    "image_url": "/garments/t10.jpg",
+    "price": 34,
+    "color_hex": "#D9D9D7",
+    "season_tags": [
+      "summer"
+    ],
+    "silhouette": {
+      "structured": true,
+      "fabric": "crisp",
+      "neckline": "collared",
+      "waist": "regular"
+    },
+    "occasion_tags": [
+      "work",
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 2 \u00b7 Tops",
+    "sizes_in_stock": [
+      "S",
+      "M",
+      "L"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      86.64,
+      -0.35,
+      0.97
+    ]
+  },
+  {
+    "id": "t11",
+    "name": "Short Sleeve Camp Shirt",
+    "category": "top",
+    "image_url": "/garments/t11.jpg",
+    "price": 29,
+    "color_hex": "#55623D",
+    "season_tags": [
+      "autumn"
+    ],
+    "silhouette": {
+      "structured": true,
+      "fabric": "crisp",
+      "neckline": "collared",
+      "waist": "regular"
+    },
+    "occasion_tags": [
+      "work",
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 2 \u00b7 Tops",
+    "sizes_in_stock": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      39.59,
+      -12.07,
+      19.45
+    ]
+  },
+  {
+    "id": "t12",
+    "name": "Gingham Short Sleeve Shirt",
+    "category": "top",
+    "image_url": "/garments/t12.jpg",
+    "price": 31,
+    "color_hex": "#D8C5B7",
+    "season_tags": [
+      "autumn",
+      "spring"
+    ],
+    "silhouette": {
+      "structured": true,
+      "fabric": "crisp",
+      "neckline": "collared",
+      "waist": "regular"
+    },
+    "occasion_tags": [
+      "work",
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 2 \u00b7 Tops",
+    "sizes_in_stock": [
+      "S",
+      "M",
+      "L"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      80.71,
+      4.37,
+      9.43
+    ]
+  },
+  {
+    "id": "t13",
+    "name": "Lace Trim Rib Camisole",
+    "category": "top",
+    "image_url": "/garments/t13.jpg",
+    "price": 22,
+    "color_hex": "#BAB8B4",
+    "season_tags": [
+      "summer"
+    ],
+    "silhouette": {
+      "structured": false,
+      "fabric": "smooth",
+      "neckline": "v",
+      "waist": "regular"
+    },
+    "occasion_tags": [
+      "work",
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 2 \u00b7 Tops",
+    "sizes_in_stock": [
+      "XS",
+      "S",
+      "M"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      74.83,
+      -0.03,
+      2.27
+    ]
+  },
+  {
+    "id": "t14",
+    "name": "Poplin Short Sleeve Shirt",
+    "category": "top",
+    "image_url": "/garments/t14.jpg",
+    "price": 28,
+    "color_hex": "#B3ABD4",
+    "season_tags": [
+      "summer"
+    ],
+    "silhouette": {
+      "structured": true,
+      "fabric": "crisp",
+      "neckline": "collared",
+      "waist": "regular"
+    },
+    "occasion_tags": [
+      "work",
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 2 \u00b7 Tops",
+    "sizes_in_stock": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      71.87,
+      11.06,
+      -19.71
+    ]
+  },
+  {
+    "id": "t15",
+    "name": "Ribbed Tank Top",
+    "category": "top",
+    "image_url": "/garments/t15.jpg",
+    "price": 18,
+    "color_hex": "#C42A1A",
+    "season_tags": [
+      "spring"
+    ],
+    "silhouette": {
+      "structured": false,
+      "fabric": "textured",
+      "neckline": "round",
+      "waist": "regular"
+    },
+    "occasion_tags": [
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 2 \u00b7 Tops",
+    "sizes_in_stock": [
+      "XS",
+      "S",
+      "M"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      43.46,
+      58.78,
+      47.04
+    ]
+  },
+  {
+    "id": "t16",
+    "name": "Wool Blend Knit Cardigan",
+    "category": "top",
+    "image_url": "/garments/t16.jpg",
+    "price": 52,
+    "color_hex": "#384646",
+    "season_tags": [
+      "winter",
+      "summer"
+    ],
+    "silhouette": {
+      "structured": false,
+      "fabric": "chunky",
+      "neckline": "v",
+      "waist": "regular"
+    },
+    "occasion_tags": [
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 2 \u00b7 Tops",
+    "sizes_in_stock": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      28.55,
+      -5.59,
+      -1.87
+    ]
+  },
+  {
+    "id": "t17",
+    "name": "Striped Mohair Jumper",
+    "category": "top",
+    "image_url": "/garments/t17.jpg",
+    "price": 44,
+    "color_hex": "#D9C7B7",
+    "season_tags": [
+      "spring",
+      "autumn"
+    ],
+    "silhouette": {
+      "structured": false,
+      "fabric": "chunky",
+      "neckline": "round",
+      "waist": "regular"
+    },
+    "occasion_tags": [
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 2 \u00b7 Tops",
+    "sizes_in_stock": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      81.3,
+      3.68,
+      10.28
+    ]
+  },
+  {
+    "id": "t18",
+    "name": "Breton Stripe Long Sleeve Tee",
+    "category": "top",
+    "image_url": "/garments/t18.jpg",
+    "price": 26,
+    "color_hex": "#E6E2D9",
+    "season_tags": [
+      "summer"
+    ],
+    "silhouette": {
+      "structured": false,
+      "fabric": "soft",
+      "neckline": "round",
+      "waist": "regular"
+    },
+    "occasion_tags": [
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 2 \u00b7 Tops",
+    "sizes_in_stock": [
+      "S",
+      "M",
+      "L"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      89.96,
+      -0.2,
+      4.86
+    ]
+  },
+  {
+    "id": "t19",
+    "name": "Knit Polo Top",
+    "category": "top",
+    "image_url": "/garments/t19.jpg",
+    "price": 39,
+    "color_hex": "#E2D2B8",
+    "season_tags": [
+      "spring"
+    ],
+    "silhouette": {
+      "structured": false,
+      "fabric": "textured",
+      "neckline": "collared",
+      "waist": "regular"
+    },
+    "occasion_tags": [
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 2 \u00b7 Tops",
+    "sizes_in_stock": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      84.85,
+      1.38,
+      14.89
+    ]
+  },
+  {
+    "id": "t20",
+    "name": "Fine Knit Roll Neck",
+    "category": "top",
+    "image_url": "/garments/t20.jpg",
+    "price": 33,
+    "color_hex": "#A5A5A9",
+    "season_tags": [
+      "summer"
+    ],
+    "silhouette": {
+      "structured": false,
+      "fabric": "smooth",
+      "neckline": "round",
+      "waist": "regular"
+    },
+    "occasion_tags": [
+      "work",
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 2 \u00b7 Tops",
+    "sizes_in_stock": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      67.85,
+      0.77,
+      -2.07
+    ]
+  },
+  {
+    "id": "t21",
+    "name": "Ribbed High Neck Sleeveless Top",
+    "category": "top",
+    "image_url": "/garments/t21.jpg",
+    "price": 24,
+    "color_hex": "#141819",
+    "season_tags": [
+      "winter",
+      "summer"
+    ],
+    "silhouette": {
+      "structured": false,
+      "fabric": "textured",
+      "neckline": "round",
+      "waist": "regular"
+    },
+    "occasion_tags": [
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 2 \u00b7 Tops",
+    "sizes_in_stock": [
+      "XS",
+      "S",
+      "M"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      7.88,
+      -1.57,
+      -1.35
+    ]
+  },
+  {
+    "id": "t22",
+    "name": "Ribbon Tie Baby Tee",
+    "category": "top",
+    "image_url": "/garments/t22.jpg",
+    "price": 21,
+    "color_hex": "#F1E4ED",
+    "season_tags": [
+      "summer"
+    ],
+    "silhouette": {
+      "structured": false,
+      "fabric": "soft",
+      "neckline": "round",
+      "waist": "regular"
+    },
+    "occasion_tags": [
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 2 \u00b7 Tops",
+    "sizes_in_stock": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      91.82,
+      5.97,
+      -2.8
+    ]
+  },
+  {
+    "id": "t23",
+    "name": "Oversized Graphic Sweatshirt",
+    "category": "top",
+    "image_url": "/garments/t23.jpg",
+    "price": 37,
+    "color_hex": "#362A26",
+    "season_tags": [
+      "autumn",
+      "winter"
+    ],
+    "silhouette": {
+      "structured": false,
+      "fabric": "soft",
+      "neckline": "round",
+      "waist": "regular"
+    },
+    "occasion_tags": [
+      "date night",
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 2 \u00b7 Tops",
+    "sizes_in_stock": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      18.28,
+      4.8,
+      4.71
+    ]
+  },
+  {
+    "id": "t24",
+    "name": "Short Sleeve Knit Polo",
+    "category": "top",
+    "image_url": "/garments/t24.jpg",
+    "price": 35,
+    "color_hex": "#2B3B54",
+    "season_tags": [
+      "winter"
+    ],
+    "silhouette": {
+      "structured": false,
+      "fabric": "textured",
+      "neckline": "collared",
+      "waist": "regular"
+    },
+    "occasion_tags": [
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 2 \u00b7 Tops",
+    "sizes_in_stock": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      24.58,
+      1.29,
+      -17.14
+    ]
+  },
+  {
+    "id": "p1",
+    "name": "Tailored Wide Leg Trousers",
+    "category": "pants",
+    "image_url": "/garments/p1.jpg",
+    "price": 58,
+    "color_hex": "#39383A",
+    "season_tags": [
+      "winter",
+      "summer"
+    ],
+    "silhouette": {
+      "structured": true,
+      "fabric": "crisp",
+      "neckline": "n-a",
+      "waist": "high"
+    },
+    "occasion_tags": [
+      "work",
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 5 \u00b7 Trousers",
+    "sizes_in_stock": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      23.68,
+      0.89,
+      -1.1
+    ]
+  },
+  {
+    "id": "p2",
+    "name": "Pleated Corduroy Trousers",
+    "category": "pants",
+    "image_url": "/garments/p2.jpg",
+    "price": 49,
+    "color_hex": "#A58A67",
+    "season_tags": [
+      "autumn",
+      "spring"
+    ],
+    "silhouette": {
+      "structured": true,
+      "fabric": "textured",
+      "neckline": "n-a",
+      "waist": "high"
+    },
+    "occasion_tags": [
+      "work",
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 5 \u00b7 Trousers",
+    "sizes_in_stock": [
+      "S",
+      "M",
+      "L"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      59.12,
+      5.12,
+      22.57
+    ]
+  },
+  {
+    "id": "p3",
+    "name": "Balloon Leg Jeans",
+    "category": "pants",
+    "image_url": "/garments/p3.jpg",
+    "price": 62,
+    "color_hex": "#172537",
+    "season_tags": [
+      "winter"
+    ],
+    "silhouette": {
+      "structured": true,
+      "fabric": "textured",
+      "neckline": "n-a",
+      "waist": "regular"
+    },
+    "occasion_tags": [
+      "work",
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 5 \u00b7 Trousers",
+    "sizes_in_stock": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      14.29,
+      0.3,
+      -13.52
+    ]
+  },
+  {
+    "id": "p4",
+    "name": "Cotton Twill Straight Trousers",
+    "category": "pants",
+    "image_url": "/garments/p4.jpg",
+    "price": 46,
+    "color_hex": "#596453",
+    "season_tags": [
+      "autumn"
+    ],
+    "silhouette": {
+      "structured": true,
+      "fabric": "natural",
+      "neckline": "n-a",
+      "waist": "regular"
+    },
+    "occasion_tags": [
+      "work",
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 5 \u00b7 Trousers",
+    "sizes_in_stock": [
+      "S",
+      "M",
+      "L"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      41.0,
+      -7.77,
+      8.24
+    ]
+  },
+  {
+    "id": "p5",
+    "name": "Pleated Wide Chinos",
+    "category": "pants",
+    "image_url": "/garments/p5.jpg",
+    "price": 52,
+    "color_hex": "#A49A8B",
+    "season_tags": [
+      "autumn"
+    ],
+    "silhouette": {
+      "structured": true,
+      "fabric": "smooth",
+      "neckline": "n-a",
+      "waist": "high"
+    },
+    "occasion_tags": [
+      "work",
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 5 \u00b7 Trousers",
+    "sizes_in_stock": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      64.05,
+      1.05,
+      9.18
+    ]
+  },
+  {
+    "id": "p6",
+    "name": "Rigid Denim Straight Jeans",
+    "category": "pants",
+    "image_url": "/garments/p6.jpg",
+    "price": 67,
+    "color_hex": "#262736",
+    "season_tags": [
+      "winter"
+    ],
+    "silhouette": {
+      "structured": true,
+      "fabric": "textured",
+      "neckline": "n-a",
+      "waist": "regular"
+    },
+    "occasion_tags": [
+      "work",
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 5 \u00b7 Trousers",
+    "sizes_in_stock": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      16.15,
+      3.71,
+      -9.84
+    ]
+  },
+  {
+    "id": "p7",
+    "name": "Pleated Wide Leg Trousers",
+    "category": "pants",
+    "image_url": "/garments/p7.jpg",
+    "price": 54,
+    "color_hex": "#413C39",
+    "season_tags": [
+      "autumn",
+      "winter"
+    ],
+    "silhouette": {
+      "structured": true,
+      "fabric": "smooth",
+      "neckline": "n-a",
+      "waist": "high"
+    },
+    "occasion_tags": [
+      "work",
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 5 \u00b7 Trousers",
+    "sizes_in_stock": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      25.72,
+      1.53,
+      2.62
+    ]
+  },
+  {
+    "id": "p8",
+    "name": "Wide Leg Ecru Jeans",
+    "category": "pants",
+    "image_url": "/garments/p8.jpg",
+    "price": 59,
+    "color_hex": "#EBE8E3",
+    "season_tags": [
+      "summer"
+    ],
+    "silhouette": {
+      "structured": true,
+      "fabric": "textured",
+      "neckline": "n-a",
+      "waist": "regular"
+    },
+    "occasion_tags": [
+      "work",
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 5 \u00b7 Trousers",
+    "sizes_in_stock": [
+      "S",
+      "M",
+      "L"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      92.1,
+      0.14,
+      2.77
+    ]
+  },
+  {
+    "id": "p9",
+    "name": "Washed Baggy Jeans",
+    "category": "pants",
+    "image_url": "/garments/p9.jpg",
+    "price": 63,
+    "color_hex": "#29282B",
+    "season_tags": [
+      "winter",
+      "summer"
+    ],
+    "silhouette": {
+      "structured": true,
+      "fabric": "textured",
+      "neckline": "n-a",
+      "waist": "regular"
+    },
+    "occasion_tags": [
+      "work",
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 5 \u00b7 Trousers",
+    "sizes_in_stock": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      16.32,
+      1.19,
+      -1.8
+    ]
+  },
+  {
+    "id": "p10",
+    "name": "Tartan Check Trousers",
+    "category": "pants",
+    "image_url": "/garments/p10.jpg",
+    "price": 48,
+    "color_hex": "#253538",
+    "season_tags": [
+      "winter"
+    ],
+    "silhouette": {
+      "structured": true,
+      "fabric": "crisp",
+      "neckline": "n-a",
+      "waist": "regular"
+    },
+    "occasion_tags": [
+      "work",
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 5 \u00b7 Trousers",
+    "sizes_in_stock": [
+      "S",
+      "M",
+      "L"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      20.92,
+      -5.66,
+      -4.02
+    ]
+  },
+  {
+    "id": "p11",
+    "name": "Stonewash Wide Jeans",
+    "category": "pants",
+    "image_url": "/garments/p11.jpg",
+    "price": 57,
+    "color_hex": "#545B63",
+    "season_tags": [
+      "winter",
+      "summer"
+    ],
+    "silhouette": {
+      "structured": true,
+      "fabric": "textured",
+      "neckline": "n-a",
+      "waist": "regular"
+    },
+    "occasion_tags": [
+      "work",
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 5 \u00b7 Trousers",
+    "sizes_in_stock": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      38.32,
+      -0.88,
+      -5.53
+    ]
+  },
+  {
+    "id": "p12",
+    "name": "Parachute Cargo Trousers",
+    "category": "pants",
+    "image_url": "/garments/p12.jpg",
+    "price": 44,
+    "color_hex": "#7B6A74",
+    "season_tags": [
+      "summer",
+      "winter"
+    ],
+    "silhouette": {
+      "structured": false,
+      "fabric": "light",
+      "neckline": "n-a",
+      "waist": "regular"
+    },
+    "occasion_tags": [
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 5 \u00b7 Trousers",
+    "sizes_in_stock": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      46.68,
+      8.59,
+      -3.1
+    ]
+  },
+  {
+    "id": "p13",
+    "name": "Drawstring Wide Trousers",
+    "category": "pants",
+    "image_url": "/garments/p13.jpg",
+    "price": 51,
+    "color_hex": "#774847",
+    "season_tags": [
+      "autumn"
+    ],
+    "silhouette": {
+      "structured": false,
+      "fabric": "draping",
+      "neckline": "n-a",
+      "waist": "high"
+    },
+    "occasion_tags": [
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 5 \u00b7 Trousers",
+    "sizes_in_stock": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      36.01,
+      19.96,
+      9.1
+    ]
+  },
+  {
+    "id": "p14",
+    "name": "Parachute Trousers",
+    "category": "pants",
+    "image_url": "/garments/p14.jpg",
+    "price": 45,
+    "color_hex": "#372426",
+    "season_tags": [
+      "winter",
+      "autumn"
+    ],
+    "silhouette": {
+      "structured": false,
+      "fabric": "light",
+      "neckline": "n-a",
+      "waist": "regular"
+    },
+    "occasion_tags": [
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 5 \u00b7 Trousers",
+    "sizes_in_stock": [
+      "S",
+      "M",
+      "L"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      16.57,
+      9.41,
+      2.3
+    ]
+  },
+  {
+    "id": "p15",
+    "name": "Straight Leg Wool Trousers",
+    "category": "pants",
+    "image_url": "/garments/p15.jpg",
+    "price": 56,
+    "color_hex": "#46474A",
+    "season_tags": [
+      "winter",
+      "summer"
+    ],
+    "silhouette": {
+      "structured": true,
+      "fabric": "smooth",
+      "neckline": "n-a",
+      "waist": "regular"
+    },
+    "occasion_tags": [
+      "work",
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 5 \u00b7 Trousers",
+    "sizes_in_stock": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      30.16,
+      0.27,
+      -1.94
+    ]
+  },
+  {
+    "id": "p16",
+    "name": "Balloon Leg Cargo Trousers",
+    "category": "pants",
+    "image_url": "/garments/p16.jpg",
+    "price": 50,
+    "color_hex": "#676448",
+    "season_tags": [
+      "autumn"
+    ],
+    "silhouette": {
+      "structured": false,
+      "fabric": "natural",
+      "neckline": "n-a",
+      "waist": "regular"
+    },
+    "occasion_tags": [
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 5 \u00b7 Trousers",
+    "sizes_in_stock": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      41.95,
+      -3.77,
+      16.35
+    ]
+  },
+  {
+    "id": "p17",
+    "name": "Wide Leg Utility Trousers",
+    "category": "pants",
+    "image_url": "/garments/p17.jpg",
+    "price": 53,
+    "color_hex": "#3C332A",
+    "season_tags": [
+      "autumn"
+    ],
+    "silhouette": {
+      "structured": true,
+      "fabric": "natural",
+      "neckline": "n-a",
+      "waist": "high"
+    },
+    "occasion_tags": [
+      "work",
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 5 \u00b7 Trousers",
+    "sizes_in_stock": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      21.93,
+      2.31,
+      7.2
+    ]
+  },
+  {
+    "id": "p18",
+    "name": "Wide Leg Twill Trousers",
+    "category": "pants",
+    "image_url": "/garments/p18.jpg",
+    "price": 55,
+    "color_hex": "#DCD4C9",
+    "season_tags": [
+      "summer",
+      "spring"
+    ],
+    "silhouette": {
+      "structured": true,
+      "fabric": "crisp",
+      "neckline": "n-a",
+      "waist": "high"
+    },
+    "occasion_tags": [
+      "work",
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 5 \u00b7 Trousers",
+    "sizes_in_stock": [
+      "S",
+      "M",
+      "L"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      85.26,
+      0.86,
+      6.41
+    ]
+  },
+  {
+    "id": "p19",
+    "name": "Corduroy Straight Trousers",
+    "category": "pants",
+    "image_url": "/garments/p19.jpg",
+    "price": 61,
+    "color_hex": "#262636",
+    "season_tags": [
+      "winter"
+    ],
+    "silhouette": {
+      "structured": true,
+      "fabric": "textured",
+      "neckline": "n-a",
+      "waist": "regular"
+    },
+    "occasion_tags": [
+      "work",
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 5 \u00b7 Trousers",
+    "sizes_in_stock": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      15.82,
+      4.42,
+      -10.35
+    ]
+  },
+  {
+    "id": "p20",
+    "name": "Camo Print Cargo Trousers",
+    "category": "pants",
+    "image_url": "/garments/p20.jpg",
+    "price": 47,
+    "color_hex": "#54473A",
+    "season_tags": [
+      "autumn"
+    ],
+    "silhouette": {
+      "structured": true,
+      "fabric": "natural",
+      "neckline": "n-a",
+      "waist": "regular"
+    },
+    "occasion_tags": [
+      "work",
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 5 \u00b7 Trousers",
+    "sizes_in_stock": [
+      "S",
+      "M",
+      "L"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      31.11,
+      3.22,
+      9.87
+    ]
+  },
+  {
+    "id": "p21",
+    "name": "Distressed Wide Jeans",
+    "category": "pants",
+    "image_url": "/garments/p21.jpg",
+    "price": 64,
+    "color_hex": "#343A47",
+    "season_tags": [
+      "winter"
+    ],
+    "silhouette": {
+      "structured": true,
+      "fabric": "textured",
+      "neckline": "n-a",
+      "waist": "regular"
+    },
+    "occasion_tags": [
+      "work",
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 5 \u00b7 Trousers",
+    "sizes_in_stock": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      24.36,
+      0.92,
+      -8.82
+    ]
+  },
+  {
+    "id": "p22",
+    "name": "Cotton Jogger Trousers",
+    "category": "pants",
+    "image_url": "/garments/p22.jpg",
+    "price": 42,
+    "color_hex": "#1C1C1C",
+    "season_tags": [
+      "winter",
+      "summer"
+    ],
+    "silhouette": {
+      "structured": false,
+      "fabric": "soft",
+      "neckline": "n-a",
+      "waist": "relaxed"
+    },
+    "occasion_tags": [
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 5 \u00b7 Trousers",
+    "sizes_in_stock": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      10.27,
+      0.0,
+      -0.0
+    ]
+  },
+  {
+    "id": "p23",
+    "name": "Pleated Camel Trousers",
+    "category": "pants",
+    "image_url": "/garments/p23.jpg",
+    "price": 57,
+    "color_hex": "#A99567",
+    "season_tags": [
+      "spring",
+      "autumn"
+    ],
+    "silhouette": {
+      "structured": true,
+      "fabric": "smooth",
+      "neckline": "n-a",
+      "waist": "high"
+    },
+    "occasion_tags": [
+      "work",
+      "everyday"
+    ],
+    "location": "Women's \u00b7 Aisle 5 \u00b7 Trousers",
+    "sizes_in_stock": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "buy_url": "#",
+    "color_lab": [
+      62.43,
+      0.69,
+      27.03
+    ]
+  }
+]
