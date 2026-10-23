@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Two icons, one per tab-strip theme. The logo is a solid black glyph
+         on transparency, so on a dark tab strip it would be an invisible
+         square; `mirra-logo-dark.png` is the same glyph in white. The
+         browser picks by media query — no build step and no JS. Chrome
+         honours `media` here; anything that doesn't simply takes the first
+         (light) icon, which is the safer default because most tab strips
+         are light. -->
+    <!-- The unconditional fallback, and the file browsers request on their
+         own at /favicon.ico whether or not it is declared here. Without a
+         real file at that path the request falls through to the SPA rewrite
+         and comes back as HTML, which the browser reports as a failed
+         resource. 16/32/48px PNGs inside an ICO container. -->
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" href="/mirra-logo.png" media="(prefers-color-scheme: light)" />
+    <link rel="icon" type="image/png" href="/mirra-logo-dark.png" media="(prefers-color-scheme: dark)" />
+    <link rel="apple-touch-icon" href="/mirra-logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>Mirra</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
