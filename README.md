@@ -7,7 +7,7 @@ personal style diagnosis - their **personal-colour palette** and their **body ty
 own garments filtered to what suits them, **tries a pick on virtually**, and is told where to find it on the
 shop floor.
 
-It digitizes the "total style diagnosis" (個人色彩 personal colour + 骨架分析 bone structure) that image
+It digitizes the "total style diagnosis" ( personal colour + bone structure) that image
 consultants sell as a paid service, and connects it directly to what's on the rack.
 
 Mirra is meant to work with **any store clothing catalog** and is a web app, so it runs on **any device with a browser**. The interface adapts to
@@ -43,7 +43,7 @@ Mirra reads the body two ways at once, because they answer different questions:
 | Lens                            | Output | Answers |
 |---------------------------------|---|---|
 | Western "fruit" shapes          | pear / apple / hourglass / rectangle / inverted-triangle | **where** to balance volume |
-| 3-type body classification <br/>骨格診断 | Straight (直筒) / Wave (波浪) / Natural (自然), as weighted scores | **how** a garment should feel - fabric, structure, waist |
+| 3-type body classification <br/> | Straight  / Wave  / Natural , as weighted scores | **how** a garment should feel - fabric, structure, waist |
 
 Together they drive the recommendation: *"Adds interest up top to balance hips"* (fruit) plus
 *"Soft, flowing fabric suits Wave"* (bone structure).
