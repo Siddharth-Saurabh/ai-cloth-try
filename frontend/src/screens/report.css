@@ -1,0 +1,47 @@
+.report { text-align: left; }
+
+.report-headline {
+  flex-shrink: 0;
+  font-size: clamp(28px, 3.4vw, 48px);
+  text-wrap: balance;
+}
+/* The season is the half of the verdict a shopper is least likely to know
+   about themselves, so it's the half that gets the colour. */
+.report-headline-season { color: var(--accent-deep); }
+
+/* Two peer cards, side by side. Each owns one subject completely; nothing
+   spans both. */
+.report-cards {
+  flex: 1;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(16px, 1.8vw, 28px);
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+.report-cards::-webkit-scrollbar { display: none; }
+
+.report-footer { display: flex; justify-content: flex-end; flex-shrink: 0; }
+
+/* The kiosk is a tall screen; a laptop in landscape is the cramped case.
+   Below ~820px of height the cards give up the illustration and the swatch
+   height first — never the advice, which is what the shopper leaves with. */
+@media (max-height: 820px) {
+  .shape-illustration { width: clamp(72px, 6vw, 92px); }
+  .palette-chip { min-height: clamp(40px, 5.6vh, 56px); }
+  .card { padding: clamp(16px, 1.8vw, 22px); gap: 12px; }
+}
+
+/* Portrait kiosk: stack the two cards. Side by side in a 1080x1920 frame
+   they'd each be a tall column with the content stranded at the top; one
+   above the other is how a portrait screen actually reads. */
+@media (orientation: portrait) {
+  .report-cards { grid-template-columns: 1fr; grid-auto-rows: min-content; }
+}
+
+@media (max-width: 900px) {
+  .report-cards { grid-template-columns: 1fr; }
+  .report-footer { justify-content: stretch; }
+  .report-footer .btn { width: 100%; }
+}

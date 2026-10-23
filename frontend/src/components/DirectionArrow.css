@@ -1,0 +1,123 @@
+/* Like PoseGuide, this is overlaid on the LIVE CAMERA FEED, not the app
+   surface — its contrast can't come from theme tokens: `--text` is dark in
+   the light theme and would vanish against dark clothing or a dim room. So,
+   same as PoseGuide.css, it uses its own fixed high-contrast treatment: a
+   white core stroke plus a wide dark halo stroke behind it (the same
+   technique video subtitles use), which reads on any background — dark or
+   bright, plain or busy — in either theme. */
+.direction-arrow {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+
+  /* Scoped to this overlay only — deliberately not theme tokens (see above).
+     The one exception is the floor arrows' blue fill: it IS the app accent,
+     and it can safely follow the theme because its legibility comes from
+     the white outline and dark shadow around it, not from the fill's own
+     contrast with the video. */
+  --arrow-on-video: #ffffff;
+  --arrow-halo: rgba(0, 0, 0, 0.65);
+  --arrow-blue: var(--accent);
+}
+
+.direction-arrow-svg {
+  width: min(48%, 260px);
+  height: auto;
+  aspect-ratio: 1 / 1;
+  overflow: visible;
+}
+
+.direction-arrow-chevron {
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+}
+
+.direction-arrow-halo,
+.direction-arrow-core {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.direction-arrow-halo {
+  stroke: var(--arrow-halo);
+  stroke-width: 13;
+}
+
+.direction-arrow-core {
+  stroke: var(--arrow-on-video);
+  stroke-width: 7;
+}
+
+/* Supplied floor-arrow artwork (forward/backward). Sized by HEIGHT, not
+   width: the two pieces are different proportions, so a shared width would
+   leave the taller one towering over the shorter. `width: auto` keeps each
+   one's own aspect from its viewBox. */
+.direction-arrow-art-svg {
+  height: min(62%, 340px);
+  width: auto;
+  max-width: 76%;
+  overflow: visible;
+}
+
+/* Blue fill, white outline, dark shadow — three layers because this sits on
+   unknown camera video: the outline separates the shape from whatever is
+   behind it, and the shadow keeps the outline itself from disappearing
+   against a bright background. The stroke paints OVER the fill (the source
+   artwork's own convention), so the internal seams stay visible and the
+   arrow reads as a solid object rather than a flat silhouette. */
+.direction-arrow-art {
+  fill: var(--arrow-blue);
+  stroke: var(--arrow-on-video);
+  stroke-width: 4;
+  stroke-linejoin: round;
+  paint-order: fill stroke;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.55));
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+}
+
+.direction-arrow--left .direction-arrow-chevron {
+  animation: direction-arrow-nudge-left 1s ease-in-out infinite;
+}
+.direction-arrow--right .direction-arrow-chevron {
+  animation: direction-arrow-nudge-right 1s ease-in-out infinite;
+}
+
+/* Each arrow nudges the way it points, which with this artwork is the
+   opposite of the polygons it replaced: forward points up into the scene,
+   backward points down out at the viewer. */
+.direction-arrow--forward .direction-arrow-art {
+  animation: direction-arrow-nudge-up 1.15s ease-in-out infinite;
+}
+.direction-arrow--backward .direction-arrow-art {
+  animation: direction-arrow-nudge-down 1.15s ease-in-out infinite;
+}
+
+@keyframes direction-arrow-nudge-left {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(-9px); }
+}
+@keyframes direction-arrow-nudge-right {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(9px); }
+}
+@keyframes direction-arrow-nudge-down {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(9px); }
+}
+@keyframes direction-arrow-nudge-up {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-9px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .direction-arrow-chevron,
+  .direction-arrow-art {
+    animation: none !important;
+  }
+}

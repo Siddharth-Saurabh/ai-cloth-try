@@ -1,0 +1,168 @@
+/* Outer reserved footprint. Deterministic from the viewport ALONE — no
+   dependency on the camera's aspect ratio or any other camera state — so it
+   never changes size or position after mount: not when camera metadata
+   arrives, not between the front and side steps, not when the camera errors
+   out. That stability is what stops the surrounding content (heading above,
+   hint below) from ever reflowing.
+
+   `align-items: stretch` (rather than `center`) is belt-and-braces here:
+   `.capture-video-area` below is explicitly sized to 100% x 100% of this
+   box regardless of the flex alignment, but `stretch` keeps that intent
+   consistent should a future child ever rely on cross-axis stretching
+   instead of explicit sizing. */
+.capture-stage {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  width: min(92vw, 640px);
+  height: 72vh;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  /* A tinted mat, not a dark plate: the stage is only ever bare for the
+     moment before the first video frame arrives, and a black rectangle on a
+     light ground reads as a broken screen for exactly as long as it shows. */
+  background: var(--surface-alt);
+}
+
+/* Cover-fills the fixed `.capture-stage` above completely — no empty bands
+   on any edge, ever, regardless of the camera's aspect ratio. This box is
+   always exactly the stage's own size (100% x 100%): unlike the previous
+   letterboxed design, it no longer tracks the camera's aspect ratio at all
+   (there is no more `--capture-aspect` custom property), so it's already
+   as stable as `.capture-stage` itself.
+
+   Because the video below uses `object-fit: cover`, the visible on-screen
+   frame is a CROPPED sub-rectangle of the raw camera frame whenever the
+   camera's aspect ratio differs from this box's. `poseFit.ts`'s
+   `computeCoverCrop` + `evaluateFit`'s `crop` parameter re-express raw
+   MediaPipe landmark coordinates in this box's own fraction space before
+   comparing them to GUIDE_BOX (see poseFit.ts), and `CaptureScreen.snap()`
+   crops the captured photo to the same rect, so detection, the on-screen
+   guide, and the stored photo all agree on what "the frame" means.
+
+   PoseGuide and DirectionArrow are deliberately children of this element
+   rather than of `.capture-stage`: both are `position: absolute; inset: 0`
+   overlays meant to line up with where the person actually appears in the
+   video, and this box IS that visible video rect. */
+.capture-video-area {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* PoseGuide is height-locked to this box (see PoseGuide.css) and can
+     overflow it horizontally on a box narrower than the guide artwork's
+     own aspect ratio. Clip that overflow here, at the video's own edges,
+     rather than letting it bleed into `.capture-stage`'s border — the
+     guide must never appear to extend past the video it's overlaid on. */
+  overflow: hidden;
+}
+.capture-video-area video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  /* `cover`, not `contain`: fills this box edge-to-edge, cropping whatever
+     part of the raw camera frame doesn't fit its aspect ratio, instead of
+     letterboxing. See the box comment above for what depends on this. */
+  object-fit: cover;
+}
+.capture-video-area video.mirrored { transform: scaleX(-1); }
+
+/* This screen is read from several metres away by design (the shopper has
+   to stand back to fit the guide), so every message on it is scaled well
+   past the app's normal sizes and pinned to full-contrast ink. */
+.capture-heading {
+  font-size: clamp(32px, 5vw, 52px);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+.capture-hint {
+  margin-top: 8px;
+  font-size: clamp(22px, 3.6vw, 32px);
+  font-weight: 600;
+  color: var(--ink);
+  transition: color 0.2s ease;
+}
+/* The "you're framed" state — the deep periwinkle, because this is text on
+   a light ground (5.5:1), not a fill. */
+.capture-hint-fit { color: var(--accent-deep); font-weight: 700; }
+/* Sits directly on live video, so it can't use an ink token: white with a
+   dark shadow is the only pairing that holds over an unknown frame. */
+.capture-countdown { position: absolute; inset: 0; display: flex; align-items: center;
+  justify-content: center; z-index: 2;
+  font-size: clamp(72px, 26vw, 140px); font-weight: 700;
+  color: #FFFFFF; text-shadow: 0 4px 24px rgba(0, 0, 0, 0.6); }
+
+/* Shared "solid panel over the feed" treatment, used by both states that
+   replace the video with an actual UI panel rather than drawing over it.
+    - `.capture-loading-overlay`: calm "starting up" placeholder shown
+      inside the reserved stage while the camera is still spinning up, so
+      the space reads as occupied instead of collapsing.
+    - `.capture-restart-overlay`: "redo the auto-capture" fallback, reachable
+      the moment something has genuinely failed: camera denied, pose model
+      failed to load, or the no-fit timeout elapsed. */
+.capture-loading-overlay,
+.capture-restart-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: var(--pad);
+  text-align: center;
+  /* Fully opaque: both states cover the live feed on purpose — a
+     half-visible person behind an error message is noise, not depth. */
+  background: var(--surface);
+}
+/* An error state, not an ordinary prompt: both lines use --danger on the
+   opaque panel above (never on raw video), so the retry affordance reads as
+   "something went wrong" at a glance rather than as a routine action. */
+.capture-restart-title {
+  font-size: clamp(24px, 3.6vw, 34px);
+  font-weight: 700;
+  color: var(--danger);
+  max-width: 90%;
+}
+.capture-restart-message {
+  font-size: clamp(20px, 3.2vw, 28px);
+  color: var(--font);
+  max-width: 90%;
+}
+
+/* Dev-only affordance (see CaptureScreen): choose a photo from disk instead
+   of standing in frame. Deliberately not styled as a PrimaryButton so it
+   can never be mistaken for part of the shopper-facing flow — and it's a
+   <label> wrapping a hidden file input, hence the explicit inline-flex and
+   cursor that a <button> would have given for free. */
+.capture-skip {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 4px;
+  padding: 10px 18px;
+  border-radius: var(--radius-pill);
+  border: 1px dashed var(--ink-mute);
+  background: none;
+  font-family: var(--font);
+  font-size: 15px;
+  color: var(--ink-mute);
+  cursor: pointer;
+}
+.capture-skip:hover { color: var(--ink); border-color: var(--ink); }
+
+/* Clipped to nothing but still rendered, so the file input keeps its place
+   in the tab order and its focus ring travels to the label around it. */
+.capture-skip-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+.capture-skip:focus-within {
+  outline: 3px solid var(--accent-deep);
+  outline-offset: 3px;
+}

@@ -1,0 +1,9 @@
+/* The app's generic panel, same surface language as `.card`: white, deeply
+   rounded, lifted by a soft shadow instead of outlined. */
+.glass-panel {
+  background: var(--surface);
+  border: 1px solid transparent;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  padding: var(--pad);
+}

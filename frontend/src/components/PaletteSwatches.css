@@ -1,0 +1,41 @@
+.palette-head { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+.palette-season { font-size: clamp(26px, 2.6vw, 36px); }
+.palette-mood { font-size: 15px; color: var(--ink-mute); }
+
+/* One row, always: a palette is a set, and a 3x2 grid reads as two groups
+   with a distinction between them that doesn't exist. Flex rather than a
+   fixed column count so 5- and 6-colour palettes both fill the row.
+
+   The row also grows to take whatever height the card has spare, so the
+   colour card fills its half of the screen with colour rather than with
+   white space. */
+.palette-grid { flex: 1; min-height: 0; display: flex; gap: 10px; list-style: none; }
+.palette-swatch { flex: 1; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.palette-chip {
+  display: block;
+  flex: 1;
+  min-height: clamp(56px, 8vh, 96px);
+  border-radius: var(--radius-sm);
+  /* Inset hairline instead of a border: a pale swatch needs an edge to read
+     as an object, and an inset one doesn't change the swatch's size. */
+  box-shadow: inset 0 0 0 1px rgba(19, 26, 43, 0.08);
+}
+.palette-chip-name {
+  font-size: clamp(12px, 1vw, 14px);
+  color: var(--ink-dim);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.palette-skip-list { display: flex; flex-wrap: wrap; gap: 8px 18px; list-style: none; margin-top: 8px; }
+.palette-skip-list li { display: flex; align-items: center; gap: 8px; font-size: 15px; color: var(--ink-dim); }
+/* Dots, not rectangles: matching the swatches' weight would imply these are
+   also choices, and they're the opposite. */
+.palette-skip-dot {
+  width: 15px; height: 15px; border-radius: 50%;
+  box-shadow: inset 0 0 0 1px rgba(19, 26, 43, 0.1);
+}
+
+.palette-metals { font-size: 15px; color: var(--ink-dim); }
+.palette-metals-label { color: var(--ink); font-weight: 600; margin-right: 8px; }

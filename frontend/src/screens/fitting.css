@@ -1,0 +1,360 @@
+.fitting { text-align: left; }
+
+/* Back has left the heading band for the opposite corner (below), so the
+   title now owns its row outright and never has to make space for a button
+   sitting next to it — in portrait it would have been the thing that
+   wrapped. */
+.fitting-title { font-size: clamp(28px, 5vw, 54px); flex-shrink: 0; }
+
+/* The mirror image of the fixed Home button (StartOverButton.css): same
+   16px offset, same 56px circle, opposite corner — the two read as one
+   pair of corner controls instead of one fixed button and one button
+   loose in the heading. Both therefore sit in the progress rail's band,
+   which is padded 88px each side precisely to keep a 56px corner button
+   clear of the track and its "Scan" label.
+
+   Fixed rather than in flow so the heading below starts at the top of the
+   content box, unshifted, and so Back stays reachable while the rack
+   scrolls. Square, not a labelled pill: 16 + 56 = 72px stays inside the
+   rail's 78px clearance at its tightest breakpoint, where a pill wide
+   enough to spell "Back" would run under the track. */
+.back-btn {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  z-index: 1000;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--hairline);
+  background: var(--surface);
+  color: var(--ink-mute);
+  line-height: 1;
+  cursor: pointer;
+  transition: transform 0.08s ease, color 0.15s ease, border-color 0.15s ease;
+}
+.back-btn:hover { border-color: var(--accent); color: var(--ink); }
+.back-btn:active { transform: scale(0.94); }
+
+/* Preview left, rack right. The preview is a fixed share so the rack gets
+   every remaining pixel — the rack is what the shopper scans. */
+.fitting-body {
+  flex: 1;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: minmax(240px, 27%) 1fr;
+  gap: clamp(16px, 2vw, 32px);
+}
+
+/* ---- preview ---- */
+
+.preview { display: flex; flex-direction: column; gap: 12px; min-height: 0; padding: clamp(14px, 1.4vw, 20px); }
+
+.preview-frame {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  background: var(--surface-alt);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+/* `cover`: fill the frame, cropping whichever axis overflows, rather than
+   letterboxing inside it. This reverses an earlier decision — the panel
+   used `contain` on the argument that cropping a shopper's own body was
+   the one thing it must not do, and the cost was a scan floating between
+   two tinted bars on every kiosk.
+ *
+ * What actually gets cropped, given the frame runs about 0.75 w/h: the
+ * catalog photos (500x500 and 500x600, so 0.83-1.0) are wider than the
+ * frame, so they lose their SIDES — background, not body. A camera scan
+ * (1024x1536, 0.67) is narrower, so it loses a few percent top and bottom
+ * instead; centred, that is trimmed headroom and floor, split evenly,
+ * rather than a foot or a head. No `object-position` override for exactly
+ * that reason — pinning to `top` would put the whole trim on the feet. */
+.preview-img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.preview-empty { position: absolute; inset: 0; display: grid; place-items: center;
+  padding: 24px; text-align: center; font-size: 16px; color: var(--ink-mute); }
+
+.preview-busy {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: rgba(255, 255, 255, 0.92);
+}
+
+/* Names what's on screen, because "your scan" and "you in the dress" look
+   similar at a glance and the difference matters. */
+.preview-tag {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  background: rgba(255, 255, 255, 0.92);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+}
+
+.preview-meta { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+.preview-name { font-size: clamp(17px, 1.5vw, 20px); font-weight: 700; color: var(--ink); }
+.preview-price { font-size: clamp(17px, 1.5vw, 20px); color: var(--ink-dim); white-space: nowrap; }
+/* The "why this suits you" line lives here rather than on every card — it's
+   only worth reading for the garment actually under consideration. */
+.preview-reason { font-size: 15px; color: var(--ink-mute); line-height: 1.35; }
+.preview-error { font-size: 15px; color: var(--danger); }
+
+.preview-body { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.preview-actions { display: flex; gap: 10px; }
+.preview-actions .btn { flex: 1; padding: 0 12px; font-size: 18px; min-height: 64px; }
+
+/* ---- rack ---- */
+
+.rack { display: flex; flex-direction: column; gap: clamp(12px, 1.9vw, 20px); min-height: 0; }
+
+/* Two dropdowns, side by side, one row. See FittingRoomScreen.tsx for why
+   this replaced eleven chips across two rows.
+
+   Shaped like the height/weight field on the measurements screen — label
+   above, recessed box below, chevron in a soft disc — so the kiosk teaches
+   that control once and reuses it.
+ *
+ * FIXED sizes, not clamps, unlike the rest of this screen. These were
+ * viewport-scaled and it was a mistake twice over. Scaled to the kiosk's
+ * width they became 116px tall with 30px text — a filter touched once or
+ * twice a session, sized like the primary action. And because the radius
+ * stayed a fixed 28px while the height moved between 56 and 116px, the
+ * corner ate a different share of the box at every size: a rounded
+ * rectangle on a phone, very nearly a pill on the kiosk. One size and one
+ * radius everywhere fixes both, and a filter has no reason to be bigger on
+ * a big screen — it is read at the same distance either way. */
+.filters { display: flex; gap: 16px; flex-shrink: 0; }
+
+/* Capped rather than free-growing: at `flex: 1` on a 1440px desktop each
+   dropdown stretched to 655px, which reads as a banner rather than a
+   control. Below 2 x 320 + gap they still share the row evenly, so a
+   phone is unaffected. */
+.filter-field { position: relative; flex: 1 1 0; min-width: 0; max-width: 320px; }
+
+.filter-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink-dim);
+  padding-left: 6px;
+  margin-bottom: 7px;
+}
+
+/* `appearance: none` strips the platform's own control chrome so the box
+   can match the measurements field; the platform's *picker* is untouched,
+   which is the part worth keeping. Right padding clears the chevron. */
+.filter-select {
+  appearance: none;
+  width: 100%;
+  min-height: 68px;
+  padding: 0 60px 0 20px;
+  font-family: var(--font);
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--ink);
+  background: var(--surface);
+  border: 2px solid var(--hairline);
+  /* A literal 16px, not var(--radius-lg): the token is sized for cards and
+     panels, and on a 68px control it would round the corners most of the
+     way to a pill. */
+  border-radius: 16px;
+  box-shadow: inset 0 2px 6px rgba(38, 54, 110, 0.06);
+  cursor: pointer;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.filter-select:hover { border-color: var(--accent); }
+.filter-select:focus-visible { outline: 3px solid var(--accent-deep); outline-offset: 3px; }
+
+/* Drawn rather than a glyph so it keeps its weight at every size, and
+   `pointer-events: none` so the disc is part of the select's hit area
+   instead of a hole in it. */
+.filter-chevron {
+  position: absolute;
+  right: 14px;
+  /* (68 - 40) / 2. `bottom` rather than `top` because the label above the
+     select is part of this positioning context. Now that both terms are
+     fixed this is just a number, and it lands on the centre at every
+     viewport instead of only one. */
+  bottom: 14px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  color: var(--accent-deep);
+  pointer-events: none;
+}
+.filter-chevron::before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  margin-top: -3px;
+  border-right: 3px solid currentColor;
+  border-bottom: 3px solid currentColor;
+  transform: rotate(45deg);
+}
+
+/* Names the rack and, when there are backfilled pieces, says so. One row,
+   baseline-aligned, so it costs a line of caption rather than a block. */
+.rack-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  flex-shrink: 0;
+}
+.rack-head .eyebrow { font-size: clamp(13px, 1.8vw, 19px); }
+.rack-note { font-size: clamp(14px, 1.9vw, 20px); color: var(--ink-mute); }
+.rack-empty { font-size: clamp(18px, 2.2vw, 24px); color: var(--ink-dim); padding: 24px 0; }
+
+.rack-list {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  scrollbar-width: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: clamp(12px, 1.2vw, 18px);
+  align-content: start;
+  padding: 2px 2px 6px;
+}
+.rack-list::-webkit-scrollbar { display: none; }
+
+.rack-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0;
+  text-align: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* The image IS the card: full width, 3:4, rounded to the card radius. The
+   selected state is a periwinkle ring around the image rather than a tint
+   behind the text, so the thing being selected is visibly the garment. */
+.rack-card-frame {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--surface-alt);
+  box-shadow: var(--shadow-card);
+  transition: box-shadow 0.15s ease, transform 0.12s ease;
+}
+.rack-card:hover .rack-card-frame { box-shadow: var(--shadow-lift); transform: translateY(-2px); }
+.rack-card.is-selected .rack-card-frame {
+  box-shadow: 0 0 0 3px var(--accent-deep), var(--shadow-lift);
+}
+
+.rack-card-img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+/* Both badges sit on the image so the foot stays down to name and price. */
+.rack-card-match {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  padding: 5px 11px;
+  border-radius: var(--radius-pill);
+  background: rgba(255, 255, 255, 0.93);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--accent-deep);
+}
+.rack-card-near {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  padding: 5px 11px;
+  border-radius: var(--radius-pill);
+  background: rgba(19, 26, 43, 0.62);
+  font-size: 12px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+.rack-card-foot { display: flex; flex-direction: column; gap: 2px; padding: 0 4px; min-width: 0; }
+.rack-card-name {
+  font-size: clamp(15px, 1.2vw, 17px);
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.25;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.rack-card-price { font-size: 15px; color: var(--ink-dim); }
+
+/* A kiosk screen is portrait, and portrait wants the preview stacked above
+   the rack, not squeezed into a 27% column beside it. Keyed on orientation
+   rather than width so it applies to a 1080x1920 kiosk (far wider than any
+   width breakpoint) as well as to a phone.
+
+   Every row is bounded and only the rack scrolls, so the page itself never
+   scrolls — the shopper's hand stays in the lower half of the screen,
+   which is the reachable half. */
+@media (orientation: portrait) {
+  .fitting-body {
+    grid-template-columns: 1fr;
+    /* auto, not a share of the viewport: the preview is given an explicit
+       height below and everything else is content-sized, so `1fr` on the
+       last row hands the rack all the slack. The old `44vh` gave the
+       preview 845px of a 1920px kiosk whether it needed them or not, and
+       that — plus two rows of chips — is what left the rack showing three
+       quarters of one row. */
+    grid-template-rows: auto minmax(0, 1fr);
+    gap: clamp(14px, 2vh, 24px);
+  }
+  .preview {
+    flex-direction: row;
+    align-items: stretch;
+    gap: clamp(14px, 2vw, 28px);
+    /* Fixed, so the panel cannot grow with the length of a garment name or
+       a styling reason. Whatever it doesn't use is rack. */
+    height: clamp(300px, 52vw, 560px);
+  }
+  .preview-frame { flex: 0 0 40%; }
+  /* Beside the preview the details column takes the rest, with the two
+     actions pushed to its foot. */
+  .preview-body { flex: 1; }
+  .preview-actions { margin-top: auto; }
+  /* Three fixed columns rather than auto-fill: on a 1080px kiosk auto-fill
+     at a 200px minimum packs in four or five, and a garment photographed
+     head to toe stops being readable well before that. Three across gives
+     ~320px cards and two full rows above the fold. */
+  .rack-list { grid-template-columns: repeat(3, 1fr); gap: clamp(12px, 2vw, 22px); }
+  .rack-card-name { font-size: clamp(15px, 2vw, 22px); }
+  .rack-card-price { font-size: clamp(14px, 1.9vw, 21px); }
+  .preview-name, .preview-price { font-size: clamp(17px, 2.9vw, 31px); }
+  .preview-reason { font-size: clamp(15px, 2vw, 22px); }
+  .preview-actions .btn { min-height: clamp(64px, 8.9vw, 96px); font-size: clamp(18px, 2.5vw, 27px); }
+}
+
+/* Narrow phone-ish portrait: two across, and the filter labels have to be
+   allowed to wrap rather than force a scrollbar. */
+@media (max-width: 620px) and (orientation: portrait) {
+  .rack-list { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Narrow phone-ish widths in landscape still need the stack. */
+@media (max-width: 860px) and (orientation: landscape) {
+  .fitting-body { grid-template-columns: 1fr; grid-template-rows: auto minmax(0, 1fr); }
+  .preview { height: clamp(260px, 34vh, 360px); }
+}
